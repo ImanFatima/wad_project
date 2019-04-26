@@ -6,6 +6,9 @@ body{
     height: 100%;
     background-position: center;
     background-size: cover;
+ /*   background-blend-mode: soft-light;*/
+    /*opacity: 0.5;*/
+    /*filter: alpha(opacity=50);*/
 }
 
 .h1style {
@@ -26,4 +29,16 @@ body{
     font-weight: bolder;
 
 
+}
+div.seven{
+    width:50%;
+    height:100px;
+    float:left;
+    background-color:red;
+}
+div.eight{
+    width:50%;
+    height:100px;
+    float:right;
+    background-color:red;
 }
