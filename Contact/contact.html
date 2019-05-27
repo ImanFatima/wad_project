@@ -3,9 +3,9 @@
 <head>
 	<title>Contact V15</title>
 	<meta charset="UTF-8">
-		<meta name="author" content="Zahida Tayyab">
-		<meta name="keyword" content="Give us a call","">
-	<meta name="viewport" content="width=device-width, initial-scale=1"
+	<meta name="author" content="Zahida Tayyab">
+	<meta name="keyword" content="Give us a call,contact number,contact account,contact database,">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -15,60 +15,61 @@
 <body>
 
 
-	<div class="container-contact100">
-		<div class="contact100-form-title" style="background-image: url(images/hospital.jpg);"</div>
+<div class="container-contact100">
+	<div class="contact100-form-title" style="background-image: url(images/hospital.jpg);" > </div>
 
-		<div class="wrap-contact100">
-			<div class="contact100-form-title" style="background-image: url(images/contact.jpg);">
+	<div class="wrap-contact100">
+		<div class="contact100-form-title" style="background-image: url(images/contact.jpg);">
 				<span class="contact100-form-title-1">
 					Contact Us
 				</span>
 
-				<span class="contact100-form-title-2">
+			<span class="contact100-form-title-2">
 					Feel free To Contact Us!
 				</span>
+		</div>
+
+		<form class="contact100-form validate-form" name="contact" onsubmit="return validateForm()" method="post">
+			<div class="wrap-input100 validate-input" data-validate="Name is required">
+				<span class="label-input100">Full Name:</span>
+				<input class="input100" type="text" name="name" placeholder="Enter full name">
+				<span class="focus-input100"></span>
 			</div>
 
-			<form class="contact100-form validate-form">
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100">Full Name:</span>
-					<input class="input100" type="text" name="name" placeholder="Enter full name">
-					<span class="focus-input100"></span>
-				</div>
+			<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+				<span class="label-input100">Email:</span>
+				<input class="input100" type="text" name="email" placeholder="Enter email addess">
+				<span class="focus-input100"></span>
+			</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100">Email:</span>
-					<input class="input100" type="text" name="email" placeholder="Enter email addess">
-					<span class="focus-input100"></span>
-				</div>
+			<div class="wrap-input100 validate-input" data-validate="Phone is required">
+				<span class="label-input100">Phone:</span>
+				<input class="input100" type="text" name="phone" placeholder="Enter phone number">
+				<span class="focus-input100"></span>
+			</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Phone is required">
-					<span class="label-input100">Phone:</span>
-					<input class="input100" type="text" name="phone" placeholder="Enter phone number">
-					<span class="focus-input100"></span>
-				</div>
+			<div class="wrap-input100 validate-input" data-validate = "Message is required">
+				<span class="label-input100">Message:</span>
+				<textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+				<span class="focus-input100"></span>
+			</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Message:</span>
-					<textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+			<div class="container-contact100-form-btn">
+				<button class="contact100-form-btn">
 						<span>
 							Submit
 							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
 						</span>
-					</button>
-				</div>
-			</form>
-		</div>
+				</button>
+			</div>
+		</form>
 	</div>
+</div>
 
 
 
-	<div id="dropDownSelect1"></div>
-	
+<div id="dropDownSelect1"></div>
+<script src="js/main.js"></script>
 </body>
+
 </html>
