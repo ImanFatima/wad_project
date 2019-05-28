@@ -19,3 +19,10 @@ div.eight{
     float:right;
     background-color:red;
 }
+.error-msg {
+    max-height: 3.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
