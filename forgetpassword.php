@@ -1,3 +1,10 @@
+<?php
+session_start();
+$cookie_name = "forgetpw";
+$cookie_value = "page";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+setcookie("user", "", time() - 3600);
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -23,14 +30,30 @@
 
 
     <!-- CSS code from Bootply.com editor -->
-    <link rel="stylesheet" href="forgetstyle.css">
-    <link rel="stylesheet" href="animate.css">
-
+    <link rel="stylesheet" href="css2/aboutstyle.css">
+    <link rel="stylesheet" href="css2/forgetstyle.css">
+    <link rel="stylesheet" href="css2/animate.css">
+    <link rel="stylesheet" href="css2/headerfooter.css">
 </head>
 
 <!-- HTML code from Bootply.com editor -->
 
-<body class="bd">
+<body >
+<div class="header">
+    <img src="logo_transparent.png" class="header-left" height="150px" width="30%">
+
+    <div class="header-right">
+        <br><br><br>
+        <a href="Homepage/homepage.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="about3.php">About</a>
+        <a href="#contact">Login</a>
+        <a class="active" href="forgetpassword.php">Forget Password</a>
+        <a href="register.php">Register</a>
+
+    </div>
+</div>
+
 
 <br>
 <br>
@@ -70,28 +93,58 @@
             </div>
         </div>
     </div>
+
+
 </div>
 
 
 
+<!--<div class="footer">
+    <h3><b>City Health Care Services (Pvt) Ltd.</b> <br>
+        Peer Khursheed Colony Road,<br>
+Lahore.<br>
+Phone: 042-6510 367<br>
+www.cityhospital.com</h3>
+</div>-->
 
+<section id="footer">
+    <div class="container">
 
-<!-- JavaScript jQuery code from Bootply.com editor  -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>
 
+    </div>
+</section>
+<!-- ./Footer -->
 
+<div class="seven">
+    <h><b>City Health Care Services (Pvt) Ltd.</b> <br>
+        Peer Khursheed Colony Road,<br>
+        Lahore.<br>
+        Phone: 042-6510 367</h><br>
+    www.cityhospital.com
+</div>
+<div class="eight">
+</div>
 
+<?php
+// remove all session variables
+session_unset();
 
-<!--<div class="seven">-->
-    <!--<h3><b>City Health Care Services (Pvt) Ltd.</b> <br>-->
-        <!--Peer Khursheed Colony Road,<br>-->
-        <!--Lahore.<br>-->
-        <!--Phone: 042-6510 367</h3><br>-->
-    <!--www.cityhospital.com-->
-<!--</div>-->
-<!--<div class="eight">-->
-<!--</div>-->
+// destroy the session
+session_destroy();
 
-
+?>
 
 
 </body>

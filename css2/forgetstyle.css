@@ -1,0 +1,17 @@
+body{
+
+
+    background-image: url('../images/hospital.jpg');
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.error-msg {
+    max-height: 3.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}

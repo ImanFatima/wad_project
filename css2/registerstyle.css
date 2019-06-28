@@ -1,7 +1,7 @@
 body{
 
-    padding-top: 50px;
-    background-image: url("hospital.jpg");
+
+    background-image: url('../images/hospital.jpg');
     background-color: #cccccc;
     height: 100%;
     background-position: center;
@@ -29,16 +29,4 @@ body{
     font-weight: bolder;
 
 
-}
-div.seven{
-    width:50%;
-    height:100px;
-    float:left;
-    background-color:red;
-}
-div.eight{
-    width:50%;
-    height:100px;
-    float:right;
-    background-color:red;
 }

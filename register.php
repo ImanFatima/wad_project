@@ -1,3 +1,10 @@
+<?php
+session_start();
+$cookie_name = "register";
+$cookie_value = "page";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+setcookie("user", "", time() - 3600);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +15,30 @@
      <meta name="author" content="ImanFatima">
     <title>Registration</title>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-
-   <link rel="stylesheet" href="registerstyle.css">
+    <link rel="stylesheet" href="css2/aboutstyle.css">
+   <link rel="stylesheet" href="css2/registerstyle.css">
+    <link rel="stylesheet" href="css2/headerfooter.css">
     <!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
+
+<div class="header">
+    <img src="logo_transparent.png" class="header-left" height="150px" width="30%">
+
+    <div class="header-right">
+        <br><br><br>
+        <a href="Homepage/homepage.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="about3.php">About</a>
+        <a href="#contact">Login</a>
+        <a href="forgetpassword.php">Forget Password</a>
+        <a class="active" href="register.php">Register</a>
+
+    </div>
+</div>
+
+
+
 <div class="blur">
 
 
@@ -67,19 +93,27 @@
     </fieldset>
 </form>
 
-<!--<div class="seven">-->
-    <!--<h3><b>City Health Care Services (Pvt) Ltd.</b> <br>-->
-        <!--Peer Khursheed Colony Road,<br>-->
-        <!--Lahore.<br>-->
-        <!--Phone: 042-6510 367</h3><br>-->
-    <!--www.cityhospital.com-->
-<!--</div>-->
-<!--<div class="eight">-->
-<!--</div>-->
 
+    <div class="seven">
+        <h><b>City Health Care Services (Pvt) Ltd.</b> <br>
+            Peer Khursheed Colony Road,<br>
+            Lahore.<br>
+            Phone: 042-6510 367</h><br>
+        www.cityhospital.com
+    </div>
+    <div class="eight">
+    </div>
 
 
 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <?php
+    // remove all session variables
+    session_unset();
+
+    // destroy the session
+    session_destroy();
+
+    ?>
 </body>
 </html>
