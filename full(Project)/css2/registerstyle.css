@@ -1,0 +1,32 @@
+body{
+
+
+    background-image: url('../images/hospital.jpg');
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+ /*   background-blend-mode: soft-light;*/
+    /*opacity: 0.5;*/
+    /*filter: alpha(opacity=50);*/
+}
+
+.h1style {
+    font-family: Algerian;
+    font-size: 60px;
+    color: darkblue;
+}
+
+.control-label
+{
+    font-weight: bold;
+
+}
+
+.help-block
+{
+    color: brown;
+    font-weight: bolder;
+
+
+}

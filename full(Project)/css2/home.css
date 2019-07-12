@@ -1,0 +1,93 @@
+
+
+
+
+div.three{
+    width:50%;
+    height:200px;
+    float:left;
+    background-color:white;
+}
+div.four{
+    width:50%;
+    height:200px;
+    float:right;
+    background-color:white;
+}
+div.five{
+    width:50%;
+    height:200px;
+    float:left;
+    background-color:white;
+}
+div.six{
+    width:50%;
+    height:200px;
+    float:right;
+    background-color:white;
+}
+div.seven{
+    width:50%;
+    height:200px;
+    float:left;
+    background-color:white;
+}
+div.eight{
+    width:50%;
+    height:200px;
+    float:right;
+    background-color:white;
+}
+div.nine{
+    width:50%;
+    height:200px;
+    float:left;
+    background-color:white;
+}
+div.ten{
+    width:50%;
+    height:200px;
+    float:right;
+    background-color:white;
+}
+div.eleven{
+    width:50%;
+    height:200px;
+    float:left;
+    background-color:white;
+}
+div.twelve{
+    width:50%;
+    height:200px;
+    float:right;
+    background-color:white;
+}
+div.thirteen{
+    width:50%;
+    height:100px;
+    float:left;
+    background-color:red;
+}
+div.fourteen{
+    width:50%;
+    height:100px;
+    float:right;
+    background-color:red;
+}
+h.one{
+    font-size:400%;
+    padding:60px 0 0 40px;
+}
+
+h.two{
+    padding:0 0 0 20px;
+}
+h.three{
+    padding:0 0 0 50px;
+}
+h.four{
+    padding:0 0 0 50px;
+}
+h.five{
+    padding:0 0 0 50px;
+}
